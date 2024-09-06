@@ -64,16 +64,19 @@ Register Number: 212223240131
 
 ```Python
 import cv2
-image=cv2.imread('naruto.jpg',1)
-cv2.imshow('Image Window', image)
+img = cv2.imread("lokesh.jpg")
+res = cv2.line(img, (0, 0), (599, 799), (200, 100, 205), 10)
+cv2.imshow('Image Window', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
 ``` 
  
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/d3cd7d09-d121-4813-b6dc-56100aff40f1)
+![image](https://github.com/user-attachments/assets/4c500e7b-1a78-4672-a8a2-aeb3f3710ebf)
+
 
  
 
@@ -82,18 +85,20 @@ i)Draw a line from the top-left to the bottom-right of the image.
 
 ```Python
 import cv2
-img = cv2.imread("naruto.jpg")
+img = cv2.imread("lokesh.jpg")
 res = cv2.line(img, (0, 0), (599, 799), (200, 100, 205), 10)
 cv2.imshow('Image Window', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
 
 ```
 
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/07cb204d-d080-4573-a838-ea650bfb9ea0)
+![image](https://github.com/user-attachments/assets/fa563f7d-311c-40a2-9830-981af61e1b66)
+
 
 
  
@@ -102,7 +107,7 @@ cv2.destroyAllWindows()
 import cv2
 
 # Load the image
-img = cv2.imread("naruto.jpg")
+img = cv2.imread("lokesh.jpg")
 
 # Get the dimensions of the image
 height, width, _ = img.shape
@@ -119,11 +124,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
+
 ```
 
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/cbedc66f-3d24-43b2-9375-aa1f0e1aa1c0)
+![image](https://github.com/user-attachments/assets/41d114c8-453b-4162-afa8-74b80db283a6)
+
+
 
 
       
@@ -131,7 +139,7 @@ cv2.destroyAllWindows()
 ```Python
 import cv2
 
-img = cv2.imread("naruto.jpg")
+img = cv2.imread("lokesh.jpg")
 start=(0,0)
 stop=(409,529)
 color=(100,255,100)
@@ -146,7 +154,8 @@ cv2.destroyAllWindows()
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/cf1fd2ba-08c8-49c8-83a0-807e1f090876)
+![image](https://github.com/user-attachments/assets/d8625052-38ee-46fc-a709-4af53bc6a2bc)
+
 
 
       
@@ -156,7 +165,7 @@ cv2.destroyAllWindows()
 import cv2
 
 # Load the image
-img = cv2.imread("naruto.jpg")
+img = cv2.imread("lokesh.jpg")
 
 # Define the text to be added and its position
 text = "OPENCV DRAWING"
@@ -177,19 +186,23 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
+
+
 ```
 
     
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/ba904a50-0a6c-4e5b-92a1-fc719083c780)
+![image](https://github.com/user-attachments/assets/c08b3f56-0e63-43b2-9689-899cc05dfb4d)
+
+
 
 
 ### 3.)Image Color Conversion:
 i)Convert the image from RGB to HSV and display it.
 ```Python
 import cv2
-img = cv2.imread('naruto.jpg',1)
+img = cv2.imread('lokesh.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 hsv2 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
@@ -199,11 +212,13 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/6fced9d3-fda8-4052-9fa2-378ead8364fd)
+![image](https://github.com/user-attachments/assets/5520ea70-3575-4811-bf24-5ae1de8277bc)
+
+
 #### ii.)Convert the image from RGB to GRAY and display it.
 ```Python
 import cv2
-img = cv2.imread('naruto.jpg',1)
+img = cv2.imread('lokesh.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
@@ -213,12 +228,13 @@ cv2.destroyAllWindows()
 ```
 
 ### Output:
-![image](https://github.com/user-attachments/assets/df64e2c0-5c85-44e2-96c7-8c9b7f50d866)
+![image](https://github.com/user-attachments/assets/07e56ace-657b-42da-a150-fe628ba9e3b7)
+
 
 #### iii.)Convert the image from RGB to YCrCb and display it.
 ```Python
 import cv2
-img = cv2.imread('naruto.jpg',1)
+img = cv2.imread('lokesh.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -227,13 +243,15 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
+
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/48881e9a-19c5-460f-ac2f-7fcdeac453e1)
+![image](https://github.com/user-attachments/assets/2b6fbb2b-66be-4510-9712-575b3692d76a)
+
 #### iv.)Convert the HSV image back to RGB and display it.
 ```Python
 import cv2
-img = cv2.imread('naruto.jpg',1)
+img = cv2.imread('lokesh.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
@@ -242,13 +260,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/5c5ed212-d02d-4e0c-969e-b01821d190ca)
+![image](https://github.com/user-attachments/assets/697153f8-72b9-41eb-8793-3a0c60be9c48)
+
 ## 4. Access and Manipulate Image Pixels:
 ```Python
 import cv2
 
 # Load and resize the image
-img = cv2.imread('naruto.jpg', 1)
+img = cv2.imread('lokesh.jpg', 1)
 img = cv2.resize(img, (300, 200))
 
 # Show the original image
@@ -270,11 +289,14 @@ cv2.destroyAllWindows()
 
 
 
+
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/6fb7f78d-d8df-4929-a929-a10b8b9638b0)
+![image](https://github.com/user-attachments/assets/133ca317-fb2b-4d03-ab4f-8ac6de69787d)
 
-![image](https://github.com/user-attachments/assets/5a5dd586-9791-4f10-9196-943433d50874)
+
+![image](https://github.com/user-attachments/assets/29b7bad7-059e-470e-ac8e-eb88603e4b7c)
+
 
 ## 5. Image Resizing:
 ```Python
@@ -288,15 +310,17 @@ cv2.imshow('resized',resized_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
+
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/8d9e2e92-8e2b-4636-927c-760f9f1cedd3)
+![image](https://github.com/user-attachments/assets/c084d3d6-ed7c-4eb6-a6f9-2604b17d75b5)
+
 ## 6.Image Cropping:
 ```Python
 import cv2
 
 # Load the image
-image1=cv2.imread('naruto.jpg',1)
+image1=cv2.imread('lokesh.jpg',1)
 
 # Define the starting point and size of the ROI
 x, y = 50, 50
@@ -311,14 +335,16 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/cdd3fdac-85af-4769-8468-2d15103fb275)
+![image](https://github.com/user-attachments/assets/5116cfb9-8d92-40a8-917e-a49bbde56444)
+
 
 ## 7.Image Flipping:
 i.)Flip the original image horizontally and display it.
 ```Python
 
+
 import cv2
-img = cv2.imread("naruto.jpg")
+img = cv2.imread("lokesh.jpg")
 img = cv2.resize(img,(300,200))
 res=cv2.rotate(img,cv2.ROTATE_180)
 cv2.imshow('Original',img)
@@ -327,7 +353,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/3a081486-4833-4543-bcd2-8cb81b593124)
+![image](https://github.com/user-attachments/assets/1481174a-a019-40e8-93ca-282a99c53721)
+
 
 
 #### ii.)Flip the original image vertically and display it.
@@ -335,7 +362,7 @@ cv2.destroyAllWindows()
 ```Python
 import cv2
 
-img = cv2.imread("naruto.jpg")
+img = cv2.imread("lokesh.jpg")
 img = cv2.resize(img,(300,200))
 res=cv2.rotate(img,cv2.ROTATE_90_CLOCKWISE)
 # Display the HSV image
@@ -345,19 +372,21 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
+
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/331ff3fc-e40a-4263-8cdf-34e39be32a68)
+![image](https://github.com/user-attachments/assets/be1f291b-7d1d-4857-9bbf-ec85f38ef080)
+
 
 ## 8. Write and Save the Modified Image:
 ```Python
 import cv2
-img = cv2.imread("naruto.jpg")
+img = cv2.imread("lokesh.jpg")
 img = cv2.resize(img,(300,200))
-cv2.imwrite('naruto1.jpg',img)
+cv2.imwrite('lokesh1.jpg',img)
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/7f852761-6100-4118-aa7c-e2f6eaf8309d)
+![image](https://github.com/user-attachments/assets/2e75dcf5-d117-4d2f-9d55-bd657e187306)
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
